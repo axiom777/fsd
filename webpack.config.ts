@@ -34,6 +34,11 @@ const config: Configuration = {
     hot: true,
     open: true,
   },
+  resolve: {
+    alias: {
+      '@components': path.resolve(PATH.src, 'components'),
+    },
+  },
   module: {
     rules: [
       {
@@ -73,6 +78,7 @@ const config: Configuration = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         exclude: [path.resolve(PATH.src, 'fonts')],
+        include: [PATH.src],
         generator: {
           filename: 'assets/images/[name].[ext]',
         },
