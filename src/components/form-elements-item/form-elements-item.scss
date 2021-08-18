@@ -1,0 +1,17 @@
+.form-elements-item {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @extend %h3;
+  }
+  &__name {
+    margin-top: 3px;
+  }
+  &__state {
+    font-weight: normal;
+  }
+  &__content {
+    margin-top: 5px;
+  }
+}

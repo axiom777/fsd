@@ -1,0 +1,8 @@
+mixin form-elements-item({name, state})
+  label.form-elements-item
+    .form-elements-item__title
+      .form-elements-item__name= name
+      .form-elements-item__state= state || ""
+    .form-elements-item__content
+      block
+
