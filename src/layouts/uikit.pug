@@ -1,0 +1,11 @@
+include /components/logo/logo.pug
+
+doctype html
+html
+  head
+    block head
+  body
+    .content-ui
+      .content-ui__logo
+        +logo()
+      block content
