@@ -1,0 +1,58 @@
+.fonts {
+  max-width: 444px;
+  $b: &;
+
+  &__item {
+    margin-bottom: 50px;
+    display: flex;
+
+    &_h1 {
+      font-size: 24px;
+
+      #{$b}__text {
+        font-weight: bold;
+      }
+    }
+
+    &_h2 {
+      font-size: 19px;
+      padding-top: 1px;
+      line-height: 24px;
+
+      #{$b}__text {
+        font-weight: bold;
+      }
+    }
+
+    &_h3 {
+      font-size: 12px;
+      line-height: 12px;
+      padding-top: 2px;
+
+      #{$b}__text {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    &_body {
+      font-size: 14px;
+      line-height: 23px;
+
+      #{$b}__text {
+        max-width: 310px;
+      }
+    }
+  }
+
+  &__name {
+    min-width: 37px;
+    text-align: right;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    margin-left: 30px;
+  }
+}

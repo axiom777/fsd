@@ -1,0 +1,28 @@
+.colors {
+  &__element {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+  }
+
+  &__content {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  &__text {
+    font-weight: bold;
+  }
+
+  &__sub {
+  }
+}

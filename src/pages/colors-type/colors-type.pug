@@ -1,0 +1,14 @@
+extends /layouts/uikit.pug
+
+include /components/colors/colors.pug
+include /components/fonts/fonts.pug
+
+block head
+  title Colors type
+
+block content
+  .colors-type
+    .colors-type__colors
+      +colors()
+    .colors-type__fonts
+      +fonts()

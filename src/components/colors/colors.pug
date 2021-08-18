@@ -1,0 +1,20 @@
+mixin colors
+  -
+    const colors = [
+      {color: "rgba(31, 32, 65, 1)", text: "Dark Shade 100%", sub: "#1F2041"},
+      {color: "rgba(31, 32, 65, 0.75)", text: "Dark Shade 75%", sub: "#1F2041"},
+      {color: "rgba(31, 32, 65, 0.5)", text: "Dark Shade 50%", sub: "#1F2041"},
+      {color: "rgba(31, 32, 65, 0.25)", text: "Dark Shade 25%", sub: "#1F2041"},
+      {color: "rgba(31, 32, 65, 0.05)", text: "Dark Shade 5%", sub: "#1F2041"},
+      {color: "#BC9CFF", text: "Purple", sub: "#BC9CFF"},
+      {color: "#6FCF97", text: "Green", sub: "#6FCF97"}
+    ];
+  .colors
+    each element in colors
+      - const { color, text, sub } = element
+
+      .colors__element
+        .colors__box(style=`background: ${color}`)
+        .colors__content
+          .colors__text=text
+          .colors__sub=sub
