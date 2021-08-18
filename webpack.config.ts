@@ -69,7 +69,10 @@ const config: Configuration = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: [path.resolve(PATH.src, 'common', 'colors.scss')],
+              resources: [
+                path.resolve(PATH.src, 'common', 'colors.scss'),
+                path.resolve(PATH.src, 'common', 'shared.scss'),
+              ],
             },
           },
         ],

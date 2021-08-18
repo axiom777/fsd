@@ -10,7 +10,7 @@
       font-size: 24px;
 
       #{$b}__text {
-        font-weight: bold;
+        @extend %h1;
       }
     }
 
@@ -20,7 +20,7 @@
       line-height: 24px;
 
       #{$b}__text {
-        font-weight: bold;
+        @extend %h2;
       }
     }
 
@@ -30,8 +30,8 @@
       padding-top: 2px;
 
       #{$b}__text {
-        font-weight: bold;
-        text-transform: uppercase;
+        @extend %h3;
+        line-height: 13px;
       }
     }
 
@@ -41,6 +41,7 @@
 
       #{$b}__text {
         max-width: 310px;
+        @extend %body;
       }
     }
   }
