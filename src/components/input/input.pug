@@ -1,0 +1,6 @@
+mixin input({value, placeholder, mod})
+  input.input(
+    value=value || "",
+    placeholder=placeholder || "",
+    class=mod ? `input_${mod}` : ""
+  )
