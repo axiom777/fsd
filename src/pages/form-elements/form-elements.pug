@@ -1,0 +1,18 @@
+extends /layouts/uikit.pug
+include ../../components/form-elements-item/form-elements-item.pug
+include ../../components/input/input.pug
+
+block head
+  title Form Elements
+
+block content
+  .form-elements
+    .form-elements__layout
+      .form-elements__column
+        +form-elements-item({name:"text field",state:"default"})
+          +input({placeholder:"Email"})
+        +form-elements-item({name:"text field",state:"Hover / Focus"})
+          +input({value:"This is pretty awesome", mod:"focused"})
+
+      .form-elements__column
+      .form-elements__column
